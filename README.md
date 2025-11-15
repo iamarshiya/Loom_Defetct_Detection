@@ -58,21 +58,37 @@ CSS3
 
 Loom_Defetct_Detection/
 │
+
 ├── .venv/                        # Virtual environment
+
 ├── static/
+
 │   └── style.css                 # Styling
+
 │
+
 ├── templates/
+
 │   └── index.html                # Dashboard UI
+
 │
+
 ├── app.py                        # Flask backend
+
 ├── dataset_collection.py         # Dataset collection script
+
 ├── deploy_rf/                    # Deployment files
+
 ├── prediction_log.csv            # Inference log
+
 ├── random_forest_silver_detector.pkl   # Trained ML model
+
 │
+
 ├── README.md                     # Project documentation
+
 ├── requirements.txt              # Dependencies
+
 └── Research_Paper.md             # Research paper on Loom Defect Detection
 
 
