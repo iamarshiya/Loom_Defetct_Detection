@@ -58,9 +58,7 @@ Pandas
 HTML5
 CSS3
 
-## 📁 Project Structure
-
-```
+📁 Project Structure
 Loom_Defetct_Detection/
 │
 ├── .venv/                 # Virtual environment
@@ -76,9 +74,8 @@ Loom_Defetct_Detection/
 ├──README.md              # Project documentation
 ├──requirements.txt
 └──Research_Paper.md      # Research Paper on Topic
-```
 
-## 📊 Machine Learning Model
+📊 Machine Learning Model
 
 The silver thread detection feature uses a Random Forest Classifier trained on fabric images.
 The model predicts:
