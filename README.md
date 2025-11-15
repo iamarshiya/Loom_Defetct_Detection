@@ -1,16 +1,17 @@
-🧵 Silver Thread Detection & Spindle Monitoring Dashboard
+**🧵 Silver Thread Detection & Spindle Monitoring Dashboard**
 
 A Flask-based machine vision dashboard that detects silver thread defects in textile images using a Random Forest ML model, and provides a live overview of spindle camera connectivity on the factory floor.
 
-Project Overview
+**Project Overview**
 
 This project automates silver thread detection in textile manufacturing.
 A trained Random Forest Classifier analyzes uploaded images and predicts whether silver thread is present, along with confidence values.
 
 The dashboard also displays the operational status of multiple factory spindles, showing whether camera feeds are connected or offline.
 
-✨ Key Features
-🖼️ Image Analysis
+**✨ Key Features**
+
+- Image Analysis
 
 Upload any fabric image
 
@@ -20,7 +21,7 @@ Displays detection result + confidence
 
 Processed image preview
 
-🏭 Spindle Monitoring
+- Spindle Monitoring
 
 Shows live spindle grid
 
@@ -28,7 +29,7 @@ Displays status for each spindle (OK / Warning / No Camera)
 
 Clean, dark-themed industrial UI
 
-🌐 Web Dashboard (Flask)
+**🌐 Web Dashboard (Flask)**
 
 Fully responsive HTML + CSS UI
 
@@ -36,8 +37,9 @@ Jinja templating for dynamic content
 
 Lightweight backend suitable for deployment
 
-🧠 Tech Stack
-Backend:
+**🧠 Tech Stack**
+
+**Backend:**
 
 Python
 Flask
@@ -48,11 +50,12 @@ OpenCV
 Pillow
 Pandas
 
-Frontend:
+**Frontend:**
 HTML5
 CSS3
 
-📁 Project Structure
+## 📁 Project Structure
+```
 Loom_Defetct_Detection/
 │
 ├── .venv/                        # Virtual environment
@@ -64,7 +67,7 @@ Loom_Defetct_Detection/
 │
 ├── app.py                        # Flask backend
 ├── dataset_collection.py         # Dataset collection script
-├── deploy_rf/                    # Deployment files
+├── deploy_rf.py                    # Deployment files
 ├── prediction_log.csv            # Inference log
 ├── random_forest_silver_detector.pkl   # Trained ML model
 │
@@ -72,8 +75,8 @@ Loom_Defetct_Detection/
 ├── requirements.txt              # Dependencies
 └── Research_Paper.md             # Research paper on Loom Defect Detection
 
-
-📊 Machine Learning Model
+```
+**📊 Machine Learning Model**
 
 The silver thread detection feature uses a Random Forest Classifier trained on fabric images.
 The model predicts:
@@ -84,7 +87,7 @@ Silver Thread Not Detected
 
 Confidence scores are generated from model prediction probabilities.
 
-🛠️ How It Works
+**🛠️ How It Works**
 
 User uploads a fabric image
 
@@ -103,7 +106,9 @@ Image preview
 Spindle status grid displays simulated live factory feed status
 
 
-🧑‍💻 Author
+**🧑‍💻 Author**
+
 
 Arshiya Attar.
+
 Janhavi Pohnerkar.
