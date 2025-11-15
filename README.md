@@ -59,6 +59,8 @@ HTML5
 CSS3
 
 📁 Project Structure
+
+```
 Loom_Defetct_Detection/
 │
 ├── .venv/                 # Virtual environment
@@ -74,6 +76,7 @@ Loom_Defetct_Detection/
 ├──README.md              # Project documentation
 ├──requirements.txt
 └──Research_Paper.md      # Research Paper on Topic
+```
 
 📊 Machine Learning Model
 
@@ -258,12 +261,13 @@ For questions or issues, please check:
 
 ## 📄 License
 
-This project is provided as-is for educational and commercial use.
+This project is licensed under the MIT License.
 
 ## 👤 Author
 Arshiya Attar
 
 GitHub: [Arshiya Attar](https://github.com/iamarshiya)
+
 LinkedIn:[Arshiya Attar](https://www.linkedin.com/in/arshiya-attar-91b4ab2b5/)
 
 ## 🙏 Acknowledgments
