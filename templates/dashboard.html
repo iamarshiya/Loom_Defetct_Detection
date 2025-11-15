@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Silver Thread Detection Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+
+
+    <div class="header">
+
+        Silver Thread Detection & Spindle Monitoring Dashboard
+
+    </div>
+
+
+
+    <div class="container">
+
+
+
+        <!-- Image Upload Card -->
+
+        <div class="card">
+
+            <h2>Image Analysis</h2>
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <input type="file" name="file" accept="image/*" required><br>
+
+                <button type="submit">Detect Silver Thread</button>
+
+            </form>
+
+
+
+            {% if image_path %}
+
+                <img src="{{ image_path }}" alt="Uploaded Image">
+
+            {% endif %}
+
+
+
+            {% if result %}
+
+                <div class="result" style="margin-top: 15px;">
+
+                    <span class="status-indicator" style="background-color: {{ status_color }};"></span>
+
+                    <span class="status-label">{{ result }}</span>
+
+                </div>
+
+                <p>Confidence: {{ confidence }}</p>
+
+            {% endif %}
+
+        </div>
+
+
+
+        <!-- Spindle Status Section -->
+
+        <div class="card">
+
+            <h2>Factory Floor Spindles</h2>
+
+            <p>Live overview of spindle camera connectivity and operational status.</p>
+
+
+
+            <div class="spindle-grid">
+
+                {% for spindle in spindles %}
+
+                <div class="spindle-box">
+
+                    <h3>{{ spindle.name }}</h3>
+
+                    <div class="spindle-feed">
+
+                        <div class="no-camera">No camera connected</div>
+
+                    </div>
+
+                    <div class="result">
+
+                        <span class="status-indicator" style="background-color: {{ spindle.color }};"></span>
+
+                        <span>{{ spindle.status }}</span>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">
+
+        © 2025 Silver Thread Vision System | Powered by Random Forest Classifier
+
+    </div>
+
+
+
+</body>
+
+</html>
